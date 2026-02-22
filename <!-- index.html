@@ -1,0 +1,270 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manibha Sharma | AI + Semiconductors Thought Leader</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-brand">Manibha Sharma</div>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accomplishments">Accomplishments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Manibha Sharma</h1>
+          <h2>AI + Semiconductors Thought Leader</h2>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-placeholder" aria-label="Profile photo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h3>About</h3>
+      <p>
+        Senior AI Safety and Systems Lead bridging Physical AI, Strategy, and Business Transformation.
+      </p>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments">
+      <h3>Accomplishments</h3>
+      <ul id="accomplishments-list">
+        <!-- JavaScript will populate this -->
+      </ul>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/example" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn">
+          LinkedIn
+        </a>
+        <a href="mailto:manibha.sharma@email.com" aria-label="Email">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/maildotru.svg" alt="Email">
+          manibha.sharma@email.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Manibha Sharma. All rights reserved.
+  </footer>
+</body>
+</html>
+
+<!-- style.css -->
+<style>
+:root {
+  --primary-bg: #fafbfc;
+  --primary-text: #181b1f;
+  --accent: #0062ff;
+  --card-bg: #f6f8fa;
+  --nav-bg: #ffffffff;
+  --link-light: #273fc6;
+  --footer-bg: #f2f2f2;
+}
+body.dark-mode {
+  --primary-bg: #181b1f;
+  --primary-text: #f6f8fa;
+  --accent: #70a1ff;
+  --card-bg: #23272b;
+  --nav-bg: #21252bff;
+  --link-light: #5daaff;
+  --footer-bg: #141618;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  background: var(--nav-bg);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+}
+.nav-brand { font-weight: bold; font-size: 1.1rem; letter-spacing: 0.5px; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+nav ul li a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+nav ul li a:hover { color: var(--accent);}
+#dark-mode-toggle {
+  background: none; border: none; font-size: 1.35rem; cursor: pointer;
+  color: var(--accent); margin-right: 1.2rem;
+}
+main {
+  max-width: 800px;
+  margin: 2.5rem auto 1rem;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+section {
+  background: var(--card-bg);
+  padding: 2rem 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(60,60,60,0.04);
+  margin-bottom: 0.5rem;
+}
+#hero {
+  display: flex; align-items: center; justify-content: center; padding: 3rem 0;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 80%);
+}
+.hero-content {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 2rem; max-width: 650px; width: 100%; justify-content: center;
+}
+.hero-text h1 {
+  font-size: 2.3rem; margin: 0 0 0.3em;
+}
+.hero-text h2 {
+  font-size: 1.08rem; font-weight: 400; color: var(--accent); margin: 0;
+  letter-spacing: 0.05em;
+}
+.hero-photo { display: flex; align-items: center; }
+.photo-placeholder {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; color: #8e9eb5;
+  border: 3px solid var(--accent);
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#about p {
+  line-height: 1.6;
+}
+#accomplishments ul {
+  padding-left: 1.1em;
+}
+#accomplishments li {
+  margin-bottom: 0.7em;
+  font-size: 1.04rem;
+}
+.contact-links {
+  display: flex; flex-wrap: wrap; gap: 1.8rem; align-items: center; margin-top: 0.6em;
+}
+.contact-links a {
+  display: flex; align-items: center;
+  gap: 0.4em;
+  color: var(--link-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.07rem;
+  background: rgba(100,183,255,0.09);
+  padding: 0.5em 1.1em;
+  border-radius: 1.5em;
+  transition: background 0.2s;
+}
+.contact-links a:hover { background: var(--accent); color: #fff; }
+.contact-links img {
+  width: 22px; height: 22px; display: inline-block; vertical-align: middle; filter: grayscale(1);
+}
+footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  color: #a5a5a5;
+  font-size: 0.97rem;
+  background: var(--footer-bg);
+  margin-top: 2rem;
+}
+@media (max-width: 700px) {
+  nav ul {display: none;}
+  nav .nav-brand {font-size: 1rem;}
+  main {gap: 1.2rem;}
+  section {padding: 1.2rem 0.7rem;}
+  .hero-content { flex-direction: column; align-items: center;}
+  .photo-placeholder {width: 86px; height: 86px;}
+}
+@media (max-width: 400px) {
+  .hero-text h1 {font-size: 1.3rem;}
+  .hero-photo {display: none;}
+}
+</style>
+
+<!-- app.js -->
+<script>
+const accomplishments = [
+  "Led cross-disciplinary teams deploying AI safety protocols in semiconductor manufacturing.",
+  "Keynote speaker at Global AI Hardware Summit 2023.",
+  "Implemented business transformation strategies merging AI with physical systems.",
+  "Co-authored 7+ published papers on safe, scalable AI hardware integration.",
+  "Mentor to rising talents in AI research and female leadership."
+];
+
+// Dynamically render accomplishments
+const accomplishmentsList = document.getElementById('accomplishments-list');
+if (accomplishmentsList) {
+  accomplishments.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    accomplishmentsList.appendChild(li);
+  });
+}
+
+// Dark mode toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const darkModeKey = 'manibha-dark-mode';
+
+function setDarkMode(on) {
+  if (on) {
+    document.body.classList.add('dark-mode');
+    darkModeToggle.textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark-mode');
+    darkModeToggle.textContent = '🌙';
+  }
+  localStorage.setItem(darkModeKey, on ? '1' : '0');
+}
+if (darkModeToggle) {
+  // Initial state
+  setDarkMode(localStorage.getItem(darkModeKey) === '1');
+  darkModeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark-mode');
+    setDarkMode(!isDark);
+  });
+}
+</script>
